@@ -1,0 +1,15 @@
+{
+  "name": "dasf",
+  "version": "1.0.0",
+  "description": "data access serverless function",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nineteta",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "supabase": "2.15.5"
+  }
+}
