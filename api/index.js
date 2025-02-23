@@ -5,12 +5,12 @@ const supabaseUrl = 'https://sbihnoprvggxkwbbrdcj.supabase.co';
 const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
-exports.handler = async (event) => {
-    if (event.httpMethod !== 'POST') {
+exports.handler = async (req, res) => {
+    if (req.httpMethod !== 'POST') {
         return { statusCode: 405, body: 'Method Not Allowed' };
     }
 
-    const { username, password } = JSON.parse(event.body);
+    const { username, password } = JSON.parse(req.body);
 
     try {
         // Hash and salt the password

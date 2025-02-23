@@ -24,3 +24,4 @@ package-lock.json
 
 # Ignore yarn.lock (optional, only if you use npm)
 yarn.lock
+.vercel
